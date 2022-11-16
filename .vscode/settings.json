@@ -1,0 +1,19 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false,
+    "prettier.printWidth": 100,
+    "prettier.tabWidth": 2,
+    "prettier.useTabs": false,
+    "prettier.semi": true,
+    "prettier.singleQuote": true,
+    "prettier.jsxSingleQuote": false,
+    "prettier.trailingComma": "es5",
+    "prettier.bracketSpacing": true,
+    "prettier.jsxBracketSameLine": false,
+    "prettier.arrowParens": "avoid",
+    // "[svg]": {
+    // "editor.defaultFormatter": "jock.svg"
+    // },
+    // "svg.preview.background": "transparent",
+    // "java.configuration.updateBuildConfiguration": "interactive"
+}
