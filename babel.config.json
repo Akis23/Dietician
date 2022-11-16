@@ -1,0 +1,50 @@
+{
+  "presets": ["module:metro-react-native-babel-preset"],
+  "plugins": [
+    [
+      "module:react-native-dotenv",
+      {
+        "moduleName": "react-native-dotenv"
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "extensions": [".ios.js", ".android.js", ".js", ".json"],
+        "alias": {
+          "src": "./src",
+          "@assets": "./src/assets",
+          "@components": "./src/components",
+          "@enums": "./src/enums",
+          "@hooks": "./src/hooks",
+          "@navigation": "./src/navigation",
+          "@screens": "./src/screens",
+          "@services": "./src/services",
+          "@utils": "./src/utils"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "loose": true,
+            "targets": {
+              "node": "current"
+            }
+          }
+        ],
+        [
+          "@babel/preset-react",
+          {
+            "runtime": "automatic"
+          }
+        ]
+      ]
+    }
+  }
+}
